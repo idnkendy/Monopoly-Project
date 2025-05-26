@@ -273,6 +273,7 @@ private boolean checkCircusVictory(Player player) {
 
 
     public void upgradeHouse() {
+        ui.getUpgradeHouseButton().setEnabled(false);
         Player currentPlayer = players.get(currentPlayerIndex);
         Property p = properties.get(currentPlayer.getPosition());
         if (p.getOwner() == currentPlayer && p.getHouseLevel() < 5) {
