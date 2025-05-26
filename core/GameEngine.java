@@ -192,7 +192,7 @@ public void postMoveActions(Player player) {
         if (nextPlayer.isInDungeon()) {
             nextPlayer.decrementTurnsInDungeon();
 
-            ui.updateLog(nextPlayer.getName() + " is still in Dungeon. Turns left: " + nextPlayer.getTurnsInDungeon() + 1, Color.BLACK);
+            ui.updateLog(nextPlayer.getName() + " is still in Dungeon. Turns left: " + (nextPlayer.getTurnsInDungeon()+1), Color.BLACK);
             ui.getRollDiceButton().setEnabled(false);
             ui.getEndTurnButton().setEnabled(true);
 
